@@ -7,8 +7,8 @@ from sage.groups.perm_gps.permgroup import *
 
 
 class GroupPopulationEvolver:
-    def __init__(self, population, score_func, generator_crossover_p=0.6, direct_product_crossover_p=0,
-                 drop_generator_p=0.1, add_generator_p=0.7):
+    def __init__(self, population, score_func, generator_crossover_p=0.4, direct_product_crossover_p=0.3,
+                 drop_generator_p=0.4, add_generator_p=0.5):
         self._parameter_validity_checks(generator_crossover_p, direct_product_crossover_p, drop_generator_p,
                                         add_generator_p)
 
